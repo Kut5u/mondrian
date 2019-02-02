@@ -46,4 +46,9 @@ public class KylinDialect extends JdbcDialectImpl {
     public boolean allowsJoinOn() {
         return true;
     }
+    
+    @Override
+    public String toUpper(String expr) {
+        return expr;
+    }
 }
